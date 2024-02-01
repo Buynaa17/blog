@@ -3,6 +3,8 @@ import { Header } from "@/components/Header";
 import { Mid } from "@/components/Mid";
 import { Allblog } from "@/components/Allblog";
 import { useEffect, useState } from "react";
+import { Trending } from "@/components/Trending";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   const [articles, setArticles] = useState([]);
@@ -22,6 +24,9 @@ export default function Home() {
       <div className="mb-[100px]">
         <Mid />
       </div>
+      <div className=" mb-10">
+        <Trending />
+      </div>
       <div>
         <Allblog />
       </div>
@@ -34,6 +39,8 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        <Footer />
       </>
     </div>
   );

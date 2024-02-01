@@ -21,7 +21,7 @@ export function Mid() {
           </div>
         </div>
       </div>
-      <div className="flex ">
+      <div className="flex  justify-end">
         <svg
           width="40"
           height="40"
