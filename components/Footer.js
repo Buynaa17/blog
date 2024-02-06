@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <div>
+    <div className="w-[1200px] m-auto">
       <svg
         width="1220"
         height="474"

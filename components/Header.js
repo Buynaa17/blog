@@ -4,24 +4,25 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <div className=" flex  justify-around mr-[200px]">
+    <div className=" flex  justify-around mr-[200px] w-[1200px] m-autov ">
       <div>
         <Logo />
       </div>
       <div className=" w-[627px]  text-center  ">
-        <Link href="articles">Home</Link>
-        <Link className="mr-10 ml-10" href="articles">
+        <Link href="/">Home</Link>
+        <Link className="mr-10 ml-10" href="/articles/blog">
           Blog
         </Link>
-        <Link href="articles">Contact</Link>
+        <Link href="/articles/contact">Contact</Link>
       </div>
 
       <div>
         <input
-          className=" w-35 bg-slate-100 absolute  rounded"
+          className=" w-35 bg-slate-100 absolute rounded "
           type="text"
+          placeholder="Search"
         ></input>
-        <div className="relative ml-3 mt-1">
+        <div className="relative ml-14 mt-1">
           <Search />
         </div>
       </div>
