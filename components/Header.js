@@ -14,6 +14,9 @@ export function Header() {
           Blog
         </Link>
         <Link href="/articles/contact">Contact</Link>
+        <Link className="mr-10 ml-10" href="/static">
+          Static
+        </Link>
       </div>
 
       <div>
