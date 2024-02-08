@@ -1,36 +1,25 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 //CSR
 export default function Home() {
   const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => response.json())
-      .then((data) => {
-        setTimeout(() => {
-          setPosts(data);
-        }, 1000);
-      });
-  }, []);
-  console.log("posts:", posts);
 
   return (
     <div>
       {posts.map((post) => {
-        return (
-          <PostItems
-            key={post.id}
-            {...post}
-            // title={post.title}
-            // body={post.body}
-          />
-        );
+        return <PostItem key={post.id} {...post} />;
       })}
     </div>
   );
 }
+export async function getServerSideProps() {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+  const data = await res.json();
+  console.log(data);
+  return { props: { data: [] } };
+}
 
-const PostItems = (props) => {
+const PostItem = (props) => {
   const { id, title, body } = props;
   return (
     <div className="border mb-8">

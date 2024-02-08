@@ -48,7 +48,7 @@ export default function Allblog() {
           </div>
         </div>
         <div
-          className="p-3 rounded bg-slate-200 text-slate-600  inline-block  mt-7 hover:bg-blue-300 items-center justify-center mx-auto"
+          className="p-3 rounded bg-slate-200 text-slate-600  inline-block  mt-7 hover:bg-blue-300  ml-[600px]"
           onClick={loadNext}
         >
           Laod more

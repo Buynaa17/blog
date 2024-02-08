@@ -6,7 +6,10 @@ export function Header() {
   return (
     <div className=" flex  justify-around mr-[200px] w-[1200px] m-autov ">
       <div>
-        <Logo />
+        <Link href="/">
+          {" "}
+          <Logo />
+        </Link>
       </div>
       <div className=" w-[627px]  text-center  ">
         <Link href="/">Home</Link>

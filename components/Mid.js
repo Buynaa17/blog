@@ -7,7 +7,7 @@ export function Mid() {
           className="rounded-xl  m-auto
 "
         />
-        <div className="absolute bottom-0 left-0 rounded bg-white w-[500px] h-[200px] ">
+        <div className="absolute bottom-2 left-2 rounded bg-white w-[500px] h-[200px] ">
           <div className=" p-10 ">
             <div className="p-2">
               <div className="mb-4 bg-blue-800 text-blue-300 inline-block rounded text-sm">
